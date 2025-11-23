@@ -1,0 +1,68 @@
+# AI Interviewer Portfolio Documentation - .gitignore
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Temporary Files
+*.tmp
+*.bak
+*.backup
+*.orig
+
+# Image Editing Files
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xcf
+
+# Large/Raw Files (before optimization)
+screenshots/raw/
+screenshots/unprocessed/
+*.raw
+*.unoptimized.png
+*.unoptimized.jpg
+
+# Sensitive Information
+*-sensitive.*
+*-confidential.*
+*-private.*
+.env
+.env.local
+
+# Backup/Archive Files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+backup/
+archives/
+
+# Mac-specific
+.AppleDouble
+.LSOverride
+
+# Windows-specific
+$RECYCLE.BIN/
+
+# Notes and drafts
+notes.md
+drafts/
+TODO.md
+scratch.md
