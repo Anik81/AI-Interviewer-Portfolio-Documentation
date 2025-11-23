@@ -31,11 +31,11 @@ An enterprise-grade platform that leverages AI to conduct video interviews, scre
 
 ### Backend
 - **Framework**: FastAPI (Python 3.11+)
-- **Database**: PostgreSQL 15
+- **Database**: MySQL (with PyMySQL driver)
 - **Cache**: Redis 7.0
 - **AI**: OpenAI GPT-4, Google Gemini
-- **ML**: LangChain, Sentence Transformers, ChromaDB
-- **Queue**: Celery (async tasks)
+- **NLP**: OpenAI Assistants API for CV processing
+- **Background Tasks**: Python async/await with FastAPI
 
 ### DevOps
 - **Containers**: Docker, Docker Compose
@@ -67,7 +67,7 @@ An enterprise-grade platform that leverages AI to conduct video interviews, scre
 ### 📊 Real-time Analytics
 - Performance metrics and dashboards
 - Recruitment pipeline visualization
-- Candidate insights with Chart.js
+- Candidate insights and scoring
 - Export to PDF/Excel
 
 ---
@@ -86,7 +86,7 @@ An enterprise-grade platform that leverages AI to conduct video interviews, scre
 └──────────────────┬──────────────────────────┘
                    │
 ┌──────────────────▼──────────────────────────┐
-│  PostgreSQL │ Redis │ ChromaDB │ AI APIs    │
+│    MySQL │ Redis │ OpenAI │ Gemini APIs    │
 └─────────────────────────────────────────────┘
 ```
 
@@ -167,24 +167,25 @@ Receive Link → Basic Info → Tech Check → Interview → Complete
 - **WebRTC** for browser-based recording
 
 ### Backend
-- **Microservices** architecture
-- **Async Processing** with Celery
-- **Multi-level Caching** (Redis)
-- **AI Fallback** mechanisms
+- **Microservices** architecture with domain-driven design
+- **Async Processing** with Python async/await
+- **Multi-level Caching** with Redis
+- **AI Fallback** mechanisms (OpenAI → Gemini)
 - **Database Optimization** (connection pooling, indexes)
+- **SQLModel** for type-safe database operations
 
 ---
 
 ## 🎓 Skills Demonstrated
 
 ✅ Full-stack development (Next.js + FastAPI)
-✅ AI/ML integration (OpenAI, Gemini, LangChain)
-✅ Real-time features (WebRTC)
+✅ AI/ML integration (OpenAI GPT-4, Google Gemini)
+✅ Real-time features (WebRTC, video/audio recording)
 ✅ State management (Zustand, React Query)
-✅ Database design & optimization
-✅ Microservices architecture
+✅ Database design & optimization (MySQL, SQLModel)
+✅ Microservices architecture with domain-driven design
 ✅ DevOps (Docker, CI/CD)
-✅ Security best practices
+✅ Security best practices (JWT, RBAC, encryption)
 
 ---
 
